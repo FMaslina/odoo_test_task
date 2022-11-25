@@ -1,0 +1,9 @@
+<odoo>
+    <data>
+      <template id="sale_report_quotations_inherit" inherit_id="sale.report_saleorder_document">
+        <xpath expr="//div[@t-field='doc.partner_id']" position="after">
+          <div t-field="doc.custom_field"/>
+        </xpath>
+      </template>
+    </data>
+</odoo>
